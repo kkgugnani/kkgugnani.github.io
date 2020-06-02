@@ -2,13 +2,14 @@
 
 body{
     margin: 0px;
+    font-family: 'Muli';
+    box-sizing: border-box;
 }
 
 header{
     background-color: white;
     text-align: right;
     font-size: 16px;
-    font-family: 'Muli';
     padding-right: 80px;
     padding-top: 36px;
     padding-bottom: 36px;
@@ -20,7 +21,6 @@ header{
 .button{
     text-decoration: none;
     font-size: 16px;
-    font-family: 'Muli';
     font-weight: normal;
     color: white;
     padding-top: 14px;
@@ -30,13 +30,12 @@ header{
     margin: 0px;
     background-color: #0C66FF;
     border-radius: 8px;
-    float: right;
+    float: right; 
 }
 
 .title{
     font-size: 28px;
     font-weight: bold;
-    font-family: 'Muli';
     display: block;
     margin: 80px 0px 0px 80px;
 }
@@ -44,7 +43,6 @@ header{
 .subtitle{
     font-size: 22px;
     font-weight: normal;
-    font-family: 'Muli';
     margin-left: 80px;
     margin-top: 12px;
     margin-bottom: 57px;
@@ -70,7 +68,6 @@ header{
 .project h1{
     font-size: 20px;
     font-weight: medium;
-    font-family: 'Muli';
     display: block;
     color: #212121;
     margin-top: 12px;
@@ -80,15 +77,12 @@ header{
 .project h2{
     font-size: 16px;
     font-weight: normal;
-    font-family: 'Muli';
     display: block;
     color: #666666;
     max-width: 312px;
 }
 
 .about{
-    background-color: #f5f5f9;
-    padding: 120px;
     display: block;
     clear: both;
     margin-top: 54px;
@@ -97,35 +91,49 @@ header{
 }
 
 .about img{
-    clip-path: circle(140px at center);
+    background-color: #f5f5f9;
+    max-width: 240px;
+    max-height: 240px;
+    padding-top: 140px;
+    padding-left: 180px;
+    padding-bottom: 140px;
+    padding-right: 180px;
     display: inline-block;
+    width: 50%;
     position: relative;
+    border-radius: 4px;
+    
 }
 
 .about-text{
     display: inline-block;
-    margin-left: 200px;
+    padding-top: 140px;
+    padding-left: 24px;
+    padding-bottom: 150px; 
+    width: 50%;
     position: absolute;
+    background-color: #f5f5f9;
+    clear: both;
 }
 
 .about-text h1{
     font-size: 16px;
     font-weight: medium;
-    font-family: 'Muli';
     color: #212121;
     display: block;
+    margin: 0px;
 }
 
 
 .about-text p{
     font-size: 18px;
     font-weight: normal;
-    font-family: 'Muli';
     color: #212121;
     display: block;
-    margin-top: 8px;
-    max-width: 389px;
-    max-height: 206px;
+    padding-top: 8px;
+    margin: 0px;
+    width: 389px;
+    height: 206px;
 }
 
 footer{
@@ -135,7 +143,6 @@ footer{
 footer h1{
     font-size: 14px;
     font-weight: normal;
-    font-family: 'Muli';
     color: white;
     padding-left: 80px;
     padding-top: 54px;
@@ -154,8 +161,124 @@ footer nav{
 footer a{
     font-size: 14px;
     font-weight: normal;
-    font-family: 'Muli';
     color: white;
     text-decoration: none;
     padding: 20px;
+}
+
+@media (max-width: 650px) {
+    header{
+        margin: auto;
+        padding: 24px;
+        display: inline-block;
+        text-align: center;
+    }
+
+   /* .button{
+        margin: auto;
+        text-align: center;
+
+    }*/
+
+    .title{
+        margin-left: 24px;
+        margin-top: 40px;
+    }
+
+    .subtitle{
+        margin-left: 24px;
+    }
+
+    .project{
+        padding: 40px 24px 40px 24px;
+        display: inline-block;
+        justify-content: center;
+        align-self: center;
+        margin: auto;
+
+    }
+
+    .project div{
+        padding-bottom: 36px;
+        align-self: center;
+        margin: auto;
+    }
+
+    .about{
+        margin: auto;
+        background-color: #f5f5f9;
+        text-align: center;
+        display: inline-block;
+        padding: auto;
+        width: 100%;
+    }
+
+    .about img{
+        padding-bottom: 40px;
+        padding-top: 60px;
+        padding-left: 24px;
+        padding-right: 24px;
+        align-self: center;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+
+    }
+
+    .about-text{
+        position: unset;
+        display: block;
+        align-self: center;
+        padding-top: 24px;
+        padding-bottom: 60px;
+        padding-left: 24px;
+        padding-right: 24px;
+        width: 312px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        
+
+    }
+
+    .about-text p{
+        width: 100%;
+        padding-right: unset;
+    }
+
+    footer{
+        display: block;
+        text-align: center;
+    
+    }
+
+    footer h1{
+        display: block;
+        align-self: center;
+        margin: auto;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 40px;
+        padding-bottom: 24px;
+    }
+
+    footer nav{
+        margin: auto;
+        padding: unset;
+        align-self: center;
+        text-align: center;
+        float: unset;
+        padding-bottom: 40px;
+    }
+
+    footer a{
+        display: block;
+        align-self: center;
+        background-color: #212121;
+        margin: auto;
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
 }
