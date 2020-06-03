@@ -126,13 +126,13 @@ header{
 
 
 .about-text p{
-    font-size: 18px;
+    font-size: 16px;
     font-weight: normal;
     color: #212121;
     display: block;
     padding-top: 8px;
     margin: 0px;
-    width: 389px;
+    width: 480px;
     height: 206px;
 }
 
@@ -244,6 +244,7 @@ footer a{
     .about-text p{
         width: 100%;
         padding-right: unset;
+        height: 100%;
     }
 
     footer{
