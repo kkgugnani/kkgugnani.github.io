@@ -1079,7 +1079,7 @@ nav .submenu {
 }
 
 .project-short-info p {
-	padding-left: 45px;
+	/*padding-left: 45px;*/
 	font-size: 20px;
 	font-weight: 500;
 	color: #777;
@@ -1093,7 +1093,7 @@ nav .submenu {
 
 .project-short-info p::after {
     position: absolute;
-    content: "";
+    /*content: "";*/
     height: 1px;
     width: 30px;
     background-color: #373BFF;
