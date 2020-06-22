@@ -801,7 +801,6 @@ nav .submenu {
 }
 
 .intro-text {
-	text-transform: capitalize;
 	color: #23232a;
 	line-height: 1.7;
 	font-size: 30px;
@@ -813,6 +812,7 @@ nav .submenu {
     position: relative;
     display: inline-block;
     z-index: 1;
+    color: #0DD461;
 }
 
 .u-line::after {
@@ -822,7 +822,6 @@ nav .submenu {
 	width: 100%;
 	bottom: 15px;
 	left: 0;
-	background-color: #0DD461;
 	z-index: -1;
 }
 
@@ -884,23 +883,23 @@ nav .submenu {
 ========================================================================== */
 
 .service-item {
-    border: 1px solid #ddd;
+    border: 0px solid #ddd;
     position: relative;
-    transition: background-color .2s;
+    /*transition: background-color .2s;
     -webkit-transition: background-color .2s;
     -moz-transition: background-color .2s;
     -ms-transition: background-color .2s;
-    -o-transition: background-color .2s;
+    -o-transition: background-color .2s;*/
 }
 
 .service-item:hover {
-    background-color: #373BFF;
+    /*background-color: #373BFF;
     transition-delay: 1s;
     -webkit-transition-delay: 1s;
     -moz-transition-delay: 1s;
     -ms-transition-delay: 1s;
     -o-transition-delay: 1s;
-	border: 1px solid transparent;
+	border: 1px solid transparent;*/
 }
 
 .service-border {
@@ -916,12 +915,12 @@ nav .submenu {
     right: -1px;
     height: 1px;
     width: 0;
-    background-color: #373BFF;
+    /*background-color: #373BFF;
     transition: .25s;
     -webkit-transition: .25s;
     -moz-transition: .25s;
     -ms-transition: .25s;
-    -o-transition: .25s;
+    -o-transition: .25s;*/
 }
 
 .service-item:hover::before {
@@ -938,10 +937,10 @@ nav .submenu {
 .service-item:hover::after {
 	height: calc(100% + 2px);
     transition-delay: .25s;
-    -webkit-transition-delay: .25s;
+    /*-webkit-transition-delay: .25s;
     -moz-transition-delay: .25s;
     -ms-transition-delay: .25s;
-    -o-transition-delay: .25s;
+    -o-transition-delay: .25s;*/
 }
 
 .service-border::before,
@@ -952,7 +951,7 @@ nav .submenu {
     left: -1px;
     height: 1px;
     width: 0;
-    background-color: #373BFF;
+    /*background-color: #373BFF;*/
     transition: .25s;
     -webkit-transition: .25s;
     -moz-transition: .25s;
@@ -999,12 +998,12 @@ nav .submenu {
 }
 
 .service-item:hover span {
-    color: #fff;
+    /*color: #fff;
     transition-delay: 1s;
     -webkit-transition-delay: 1s;
     -moz-transition-delay: 1s;
     -ms-transition-delay: 1s;
-    -o-transition-delay: 1s;
+    -o-transition-delay: 1s;*/
 }
 
 .service-item h4 {
@@ -1020,12 +1019,12 @@ nav .submenu {
 }
 
 .service-item:hover h4 {
-    color: #fff;
+    /*color: #fff;
     transition-delay: 1s;
     -webkit-transition-delay: 1s;
     -moz-transition-delay: 1s;
     -ms-transition-delay: 1s;
-    -o-transition-delay: 1s;
+    -o-transition-delay: 1s;*/
 }
 
 .service-item p {
